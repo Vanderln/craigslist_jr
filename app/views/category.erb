@@ -1,0 +1,10 @@
+<%= @category.description %>
+<% @category.posts.each do |post| %>
+  <p><a href="/posts/<%=post.id%>"><%= post.title %></a></p>
+<% end %>
+
+
+<br>
+<br>
+
+<a href = "/posts/new?category=<%=@category.id%>">Create New Post</a>

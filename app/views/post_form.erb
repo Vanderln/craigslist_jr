@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Create New Post</h1>
+  <form action="/posts" method="post">
+    <label for="description"></label>
+    <h2>Your Url Code is:<h2>
+      <%=@rand_key%>
+      <h2> You need this Code to edit your post!!<h2>
+        <br>
+        <br>
+    <input type="hidden" name="post[category_id]" value="<%= params[:category] %>">
+     
+    <input id="title" type="text" name="post[title]" placeholder="Enter title">
+    <br>
+    <input id="email" type="text" name="post[email]" placeholder="Enter valid email">
+    <br>
+    <input id="price" type="text" name="post[price]" placeholder="Enter price">
+    <br>
+    <textarea name="post[description]" cols="30" rows="10" placeholder="Please describe your product.">
+      
+    </textarea>
+    <br>
+    <input type="hidden" name="post[edit_key]" value="<%= @rand_key %>">
+    <input type="submit">
+  </form>
+</div>

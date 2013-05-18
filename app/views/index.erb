@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Welcome to Bill and Earl's List!</h1>
+
+  <% @categories.each do |category| %>
+    
+  <a href = "/categories/<%= category.description.downcase %>"><%= category.description %></a>
+    <br>
+  <% end %>
+  <br>
+  <br>
+  <a href ="/categories/new">Create New Category</a>  
+
+
+
+  <table>
+    
+  </table>
+</div>

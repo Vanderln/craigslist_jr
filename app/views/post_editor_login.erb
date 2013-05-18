@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>To edit Your Post</h1>
+  <h1>enter your key</h1>
+  <form action="/posts/login" method="post">
+    <!-- <label for="description">Description</label> -->
+    <p>Edit Key:</p>
+    <br>
+    <input id="edit_key" type="text" name="post[edit_key]">
+    <input type="hidden" name="post[post_id]" value="<%= @post.id %>"
+    <br>
+    
+    <input type="submit">
+  </form>
+</div>

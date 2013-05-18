@@ -1,0 +1,14 @@
+<h2><%= @post.category.description %></h2>
+
+<h4>Title:</h4>
+<p><%= @post.title %></p>
+<h5>Description:</h5>
+<p><%= @post.description %></p>
+
+<br>
+<br>
+<a href = "/posts/edit/<%=@post.id%>">Edit this post!</a>
+<br>
+<a href = "/categories/<%=@post.category.description%>">Back to Post List</a>
+<br>
+<a href = "/">Back to homepage</a>
